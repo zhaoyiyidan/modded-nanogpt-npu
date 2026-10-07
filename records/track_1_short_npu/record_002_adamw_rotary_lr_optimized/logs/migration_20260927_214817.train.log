@@ -1,0 +1,275 @@
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/bin/python
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/bin/torchrun
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+Running pytorch 2.7.1+cpu
+using device: npu:2
+using device: npu:6
+using device: npu:15
+using device: npu:1
+using device: npu:5
+using device: npu:0
+total_batch_size: 524288, tokens_per_fwdbwd: 524288, grad_accum_steps: 1
+using device: npu:12
+using device: npu:14
+using device: npu:3
+using device: npu:10
+using device: npu:11
+using device: npu:4
+using device: npu:9
+using device: npu:7
+using device: npu:8
+using device: npu:13
+[rank2]:[W927 21:48:31.670946630 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank6]:[W927 21:48:31.832861440 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+torch.compile skipped on NPU
+[rank15]:[W927 21:48:32.984542680 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank1]:[W927 21:48:32.024787200 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+DataLoader: total number of tokens: 10,255,324,043 across 103 files
+[rank5]:[W927 21:48:32.566025040 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+DataLoader: total number of tokens: 100,000,000 across 1 files
+[rank0]:[W927 21:48:33.963077590 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank14]:[W927 21:48:33.967591170 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank12]:[W927 21:48:33.003591000 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank4]:[W927 21:48:33.279150240 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank3]:[W927 21:48:33.322344950 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank7]:[W927 21:48:33.625427790 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank10]:[W927 21:48:33.638028200 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank9]:[W927 21:48:33.888715420 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank11]:[W927 21:48:33.890402340 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank8]:[W927 21:48:33.890646280 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank13]:[W927 21:48:34.940331640 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+step:0/9536 val_loss:11.0240 train_time:0ms step_avg:0.15ms
+step:100/9536 train_loss:6.125000 lr:7.03e-04 train_time:24892ms step_avg:248.92ms
+step:200/9536 train_loss:5.375000 lr:1.41e-03 train_time:49448ms step_avg:247.24ms
+step:300/9536 train_loss:5.250000 lr:2.11e-03 train_time:73634ms step_avg:245.45ms
+step:400/9536 train_loss:4.937500 lr:2.81e-03 train_time:98522ms step_avg:246.30ms
+step:500/9536 train_loss:4.562500 lr:3.52e-03 train_time:122712ms step_avg:245.42ms
+step:600/9536 train_loss:4.125000 lr:3.60e-03 train_time:147423ms step_avg:245.70ms
+step:700/9536 train_loss:4.156250 lr:3.60e-03 train_time:171606ms step_avg:245.15ms
+step:800/9536 train_loss:4.093750 lr:3.60e-03 train_time:196589ms step_avg:245.74ms
+step:900/9536 train_loss:3.828125 lr:3.60e-03 train_time:220784ms step_avg:245.32ms
+step:1000/9536 train_loss:3.828125 lr:3.60e-03 train_time:245489ms step_avg:245.49ms
+step:1100/9536 train_loss:3.984375 lr:3.60e-03 train_time:269662ms step_avg:245.15ms
+step:1200/9536 train_loss:3.906250 lr:3.60e-03 train_time:294512ms step_avg:245.43ms
+step:1300/9536 train_loss:3.968750 lr:3.60e-03 train_time:318688ms step_avg:245.14ms
+step:1400/9536 train_loss:3.796875 lr:3.60e-03 train_time:343573ms step_avg:245.41ms
+step:1500/9536 train_loss:3.656250 lr:3.60e-03 train_time:367751ms step_avg:245.17ms
+step:1600/9536 train_loss:3.718750 lr:3.60e-03 train_time:392427ms step_avg:245.27ms
+step:1700/9536 train_loss:3.750000 lr:3.60e-03 train_time:416942ms step_avg:245.26ms
+step:1800/9536 train_loss:3.750000 lr:3.60e-03 train_time:441493ms step_avg:245.27ms
+step:1900/9536 train_loss:3.812500 lr:3.60e-03 train_time:466306ms step_avg:245.42ms
+step:2000/9536 train_loss:3.781250 lr:3.60e-03 train_time:490480ms step_avg:245.24ms
+step:2100/9536 train_loss:3.609375 lr:3.60e-03 train_time:515153ms step_avg:245.31ms
+step:2200/9536 train_loss:3.640625 lr:3.60e-03 train_time:539334ms step_avg:245.15ms
+step:2300/9536 train_loss:3.859375 lr:3.60e-03 train_time:564178ms step_avg:245.29ms
+step:2400/9536 train_loss:3.546875 lr:3.60e-03 train_time:588360ms step_avg:245.15ms
+step:2500/9536 train_loss:3.765625 lr:3.60e-03 train_time:613013ms step_avg:245.21ms
+step:2600/9536 train_loss:4.093750 lr:3.60e-03 train_time:637207ms step_avg:245.08ms
+step:2700/9536 train_loss:3.578125 lr:3.60e-03 train_time:661865ms step_avg:245.14ms
+step:2800/9536 train_loss:3.718750 lr:3.60e-03 train_time:686047ms step_avg:245.02ms
+step:2900/9536 train_loss:3.765625 lr:3.60e-03 train_time:710888ms step_avg:245.13ms
+step:3000/9536 train_loss:3.578125 lr:3.60e-03 train_time:735059ms step_avg:245.02ms
+step:3100/9536 train_loss:3.578125 lr:3.60e-03 train_time:759668ms step_avg:245.05ms
+step:3200/9536 train_loss:3.531250 lr:3.60e-03 train_time:783853ms step_avg:244.95ms
+step:3300/9536 train_loss:3.500000 lr:3.60e-03 train_time:808724ms step_avg:245.07ms
+step:3400/9536 train_loss:3.812500 lr:3.60e-03 train_time:832906ms step_avg:244.97ms
+step:3500/9536 train_loss:3.531250 lr:3.60e-03 train_time:857815ms step_avg:245.09ms
+step:3600/9536 train_loss:3.546875 lr:3.60e-03 train_time:882107ms step_avg:245.03ms
+step:3700/9536 train_loss:3.625000 lr:3.60e-03 train_time:906642ms step_avg:245.04ms
+step:3800/9536 train_loss:3.406250 lr:3.60e-03 train_time:931286ms step_avg:245.08ms
+step:3900/9536 train_loss:3.609375 lr:3.60e-03 train_time:955466ms step_avg:244.99ms
+step:4000/9536 train_loss:3.531250 lr:3.60e-03 train_time:980416ms step_avg:245.10ms
+step:4100/9536 train_loss:3.421875 lr:3.60e-03 train_time:1004593ms step_avg:245.02ms
+step:4200/9536 train_loss:3.375000 lr:3.60e-03 train_time:1029475ms step_avg:245.11ms
+step:4300/9536 train_loss:3.406250 lr:3.60e-03 train_time:1053664ms step_avg:245.04ms
+step:4400/9536 train_loss:3.390625 lr:3.60e-03 train_time:1078653ms step_avg:245.15ms
+step:4500/9536 train_loss:3.437500 lr:3.60e-03 train_time:1102841ms step_avg:245.08ms
+step:4600/9536 train_loss:3.484375 lr:3.60e-03 train_time:1127541ms step_avg:245.12ms
+step:4700/9536 train_loss:3.484375 lr:3.60e-03 train_time:1151728ms step_avg:245.05ms
+step:4800/9536 train_loss:3.453125 lr:3.60e-03 train_time:1176663ms step_avg:245.14ms
+step:4900/9536 train_loss:3.359375 lr:3.60e-03 train_time:1200848ms step_avg:245.07ms
+step:5000/9536 train_loss:3.546875 lr:3.60e-03 train_time:1225652ms step_avg:245.13ms
+step:5100/9536 train_loss:3.437500 lr:3.60e-03 train_time:1249833ms step_avg:245.07ms
+step:5200/9536 train_loss:3.453125 lr:3.60e-03 train_time:1274959ms step_avg:245.18ms
+step:5300/9536 train_loss:3.296875 lr:3.60e-03 train_time:1299482ms step_avg:245.19ms
+step:5400/9536 train_loss:3.687500 lr:3.60e-03 train_time:1323909ms step_avg:245.17ms
+step:5500/9536 train_loss:3.609375 lr:3.55e-03 train_time:1348205ms step_avg:245.13ms
+step:5600/9536 train_loss:3.640625 lr:3.46e-03 train_time:1372826ms step_avg:245.15ms
+step:5700/9536 train_loss:3.515625 lr:3.37e-03 train_time:1397331ms step_avg:245.15ms
+step:5800/9536 train_loss:3.421875 lr:3.28e-03 train_time:1421507ms step_avg:245.09ms
+step:5900/9536 train_loss:3.375000 lr:3.20e-03 train_time:1446263ms step_avg:245.13ms
+step:6000/9536 train_loss:3.265625 lr:3.11e-03 train_time:1470444ms step_avg:245.07ms
+step:6100/9536 train_loss:3.765625 lr:3.02e-03 train_time:1495121ms step_avg:245.10ms
+step:6200/9536 train_loss:3.578125 lr:2.93e-03 train_time:1519312ms step_avg:245.05ms
+step:6300/9536 train_loss:3.484375 lr:2.85e-03 train_time:1543994ms step_avg:245.08ms
+step:6400/9536 train_loss:3.328125 lr:2.76e-03 train_time:1568180ms step_avg:245.03ms
+step:6500/9536 train_loss:3.562500 lr:2.67e-03 train_time:1592880ms step_avg:245.06ms
+step:6600/9536 train_loss:3.437500 lr:2.58e-03 train_time:1617070ms step_avg:245.01ms
+step:6700/9536 train_loss:3.312500 lr:2.49e-03 train_time:1642031ms step_avg:245.08ms
+step:6800/9536 train_loss:3.468750 lr:2.41e-03 train_time:1666211ms step_avg:245.03ms
+step:6900/9536 train_loss:3.250000 lr:2.32e-03 train_time:1690894ms step_avg:245.06ms
+step:7000/9536 train_loss:3.359375 lr:2.23e-03 train_time:1715165ms step_avg:245.02ms
+step:7100/9536 train_loss:3.437500 lr:2.14e-03 train_time:1739763ms step_avg:245.04ms
+step:7200/9536 train_loss:3.312500 lr:2.05e-03 train_time:1764284ms step_avg:245.04ms
+step:7300/9536 train_loss:3.296875 lr:1.97e-03 train_time:1789104ms step_avg:245.08ms
+step:7400/9536 train_loss:3.375000 lr:1.88e-03 train_time:1813420ms step_avg:245.06ms
+step:7500/9536 train_loss:3.375000 lr:1.79e-03 train_time:1838051ms step_avg:245.07ms
+step:7600/9536 train_loss:3.593750 lr:1.70e-03 train_time:1862948ms step_avg:245.12ms
+step:7700/9536 train_loss:3.437500 lr:1.61e-03 train_time:1887130ms step_avg:245.08ms
+step:7800/9536 train_loss:3.343750 lr:1.53e-03 train_time:1912079ms step_avg:245.14ms
+step:7900/9536 train_loss:3.375000 lr:1.44e-03 train_time:1936260ms step_avg:245.10ms
+step:8000/9536 train_loss:3.296875 lr:1.35e-03 train_time:1961136ms step_avg:245.14ms
+step:8100/9536 train_loss:3.343750 lr:1.26e-03 train_time:1985322ms step_avg:245.10ms
+step:8200/9536 train_loss:3.156250 lr:1.18e-03 train_time:2010207ms step_avg:245.15ms
+step:8300/9536 train_loss:3.453125 lr:1.09e-03 train_time:2034385ms step_avg:245.11ms
+step:8400/9536 train_loss:3.562500 lr:9.99e-04 train_time:2058918ms step_avg:245.11ms
+step:8500/9536 train_loss:3.312500 lr:9.11e-04 train_time:2083096ms step_avg:245.07ms
+step:8600/9536 train_loss:3.125000 lr:8.24e-04 train_time:2108038ms step_avg:245.12ms
+step:8700/9536 train_loss:3.218750 lr:7.36e-04 train_time:2132213ms step_avg:245.08ms
+step:8800/9536 train_loss:3.296875 lr:6.48e-04 train_time:2156742ms step_avg:245.08ms
+step:8900/9536 train_loss:3.312500 lr:5.60e-04 train_time:2181259ms step_avg:245.09ms
+step:9000/9536 train_loss:3.281250 lr:4.72e-04 train_time:2205795ms step_avg:245.09ms
+step:9100/9536 train_loss:3.328125 lr:3.84e-04 train_time:2230037ms step_avg:245.06ms
+step:9200/9536 train_loss:3.250000 lr:2.96e-04 train_time:2254613ms step_avg:245.07ms
+step:9300/9536 train_loss:3.265625 lr:2.08e-04 train_time:2278931ms step_avg:245.05ms
+step:9400/9536 train_loss:3.265625 lr:1.20e-04 train_time:2303352ms step_avg:245.04ms
+step:9500/9536 train_loss:3.171875 lr:3.25e-05 train_time:2328259ms step_avg:245.08ms
+step:9536/9536 train_loss:3.453125 lr:8.79e-07 train_time:2336972ms step_avg:245.07ms
+step:9536/9536 val_loss:3.2457 train_time:2336973ms step_avg:245.07ms
+peak memory consumption: 21063 MiB
+total training time: 2336.97s (2336973ms)

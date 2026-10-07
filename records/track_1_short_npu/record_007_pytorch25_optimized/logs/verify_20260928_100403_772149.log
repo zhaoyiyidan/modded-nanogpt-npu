@@ -1,0 +1,353 @@
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+W0928 10:04:09.208000 772194 site-packages/torch/distributed/run.py:766] 
+W0928 10:04:09.208000 772194 site-packages/torch/distributed/run.py:766] *****************************************
+W0928 10:04:09.208000 772194 site-packages/torch/distributed/run.py:766] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0928 10:04:09.208000 772194 site-packages/torch/distributed/run.py:766] *****************************************
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/dynamo/torchair/__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0 owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch_npu/utils/collect_env.py:58: UserWarning: Warning: The /usr/local/Ascend/cann-8.5.0/aarch64-linux/ascend_ops_install.info owner does not match the current owner.
+  warnings.warn(f"Warning: The {path} owner does not match the current owner.")
+using device: npu:0
+using device: npu:2
+using device: npu:4
+using device: npu:14
+using device: npu:5
+using device: npu:3
+using device: npu:6
+using device: npu:13
+using device: npu:12
+using device: npu:15
+using device: npu:11
+using device: npu:8
+using device: npu:9
+using device: npu:7
+using device: npu:10
+Training DataLoader: total number of tokens: 10255324043 across 103 files
+Validation DataLoader: total number of tokens: 100000000 across 1 files
+using device: npu:1
+[rank0]:[W928 10:04:20.232692300 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank2]:[W928 10:04:20.246200420 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank4]:[W928 10:04:20.246451240 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank5]:[W928 10:04:20.477405600 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank10]:[W928 10:04:20.531386910 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank12]:[W928 10:04:20.896192200 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank9]:[W928 10:04:21.990646450 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank8]:[W928 10:04:21.401520560 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank14]:[W928 10:04:21.406099560 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank11]:[W928 10:04:21.406105540 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank13]:[W928 10:04:21.668160360 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank7]:[W928 10:04:21.669190020 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank15]:[W928 10:04:22.922449360 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank6]:[W928 10:04:22.924805210 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank3]:[W928 10:04:22.924980020 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+[rank1]:[W928 10:04:22.952838640 compiler_depend.ts:338] Warning: Cannot create tensor with interal format while allow_internel_format=False, tensor will be created with base format. (function operator())
+...............step:0/5100 val_loss:15.9925 train_time:290ms step_avg:nanms
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+......./SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+.../SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+/SharePath/chenyupeng/cyp-testtest/llm_test_migrated/lib/python3.10/site-packages/torch/_functorch/_aot_autograd/utils.py:130: UserWarning: Your compiler for AOTAutograd is returning a function that doesn't take boxed arguments. Please wrap it with functorch.compile.make_boxed_func or handle the boxed arguments yourself. See https://github.com/pytorch/pytorch/pull/83137#issuecomment-1211320670 for rationale.
+  warnings.warn(
+......step:50/5100 train_loss:5.5625 train_time:10257ms step_avg:256.43ms
+step:100/5100 train_loss:5.1875 train_time:23020ms step_avg:255.77ms
+step:125/5100 val_loss:4.9645 train_time:29565ms step_avg:257.09ms
+step:150/5100 train_loss:5.0625 train_time:35781ms step_avg:255.58ms
+step:200/5100 train_loss:4.5000 train_time:48803ms step_avg:256.86ms
+step:250/5100 train_loss:4.1875 train_time:61568ms step_avg:256.54ms
+step:250/5100 val_loss:4.3325 train_time:61736ms step_avg:257.23ms
+step:300/5100 train_loss:4.1875 train_time:74339ms step_avg:256.34ms
+step:350/5100 train_loss:4.0000 train_time:87105ms step_avg:256.19ms
+step:375/5100 val_loss:4.0569 train_time:93654ms step_avg:256.59ms
+step:400/5100 train_loss:4.0312 train_time:100187ms step_avg:256.89ms
+step:450/5100 train_loss:3.9531 train_time:112948ms step_avg:256.70ms
+step:500/5100 train_loss:4.0312 train_time:125715ms step_avg:256.56ms
+step:500/5100 val_loss:3.9195 train_time:125883ms step_avg:256.90ms
+step:550/5100 train_loss:3.8750 train_time:138484ms step_avg:256.45ms
+step:600/5100 train_loss:3.7344 train_time:151572ms step_avg:256.90ms
+step:625/5100 val_loss:3.8351 train_time:158117ms step_avg:257.10ms
+step:650/5100 train_loss:3.9688 train_time:164334ms step_avg:256.77ms
+step:700/5100 train_loss:3.7500 train_time:177096ms step_avg:256.66ms
+step:750/5100 train_loss:3.7188 train_time:189859ms step_avg:256.57ms
+step:750/5100 val_loss:3.7740 train_time:190025ms step_avg:256.79ms
+step:800/5100 train_loss:3.7500 train_time:203351ms step_avg:257.41ms
+step:850/5100 train_loss:3.7031 train_time:216114ms step_avg:257.28ms
+step:875/5100 val_loss:3.7271 train_time:222658ms step_avg:257.41ms
+step:900/5100 train_loss:3.6719 train_time:228873ms step_avg:257.16ms
+step:950/5100 train_loss:3.7500 train_time:241800ms step_avg:257.23ms
+step:1000/5100 train_loss:3.8750 train_time:254861ms step_avg:257.44ms
+step:1000/5100 val_loss:3.6848 train_time:255028ms step_avg:257.60ms
+step:1050/5100 train_loss:3.7031 train_time:267627ms step_avg:257.33ms
+step:1100/5100 train_loss:3.6719 train_time:280395ms step_avg:257.24ms
+step:1125/5100 val_loss:3.6567 train_time:286940ms step_avg:257.35ms
+step:1150/5100 train_loss:3.5156 train_time:293577ms step_avg:257.52ms
+step:1200/5100 train_loss:3.6562 train_time:306344ms step_avg:257.43ms
+step:1250/5100 train_loss:3.6875 train_time:319105ms step_avg:257.34ms
+step:1250/5100 val_loss:3.6282 train_time:319273ms step_avg:257.48ms
+step:1300/5100 train_loss:3.6406 train_time:331870ms step_avg:257.26ms
+step:1350/5100 train_loss:3.5312 train_time:345136ms step_avg:257.56ms
+step:1375/5100 val_loss:3.6063 train_time:351684ms step_avg:257.64ms
+step:1400/5100 train_loss:3.6406 train_time:357903ms step_avg:257.48ms
+step:1450/5100 train_loss:3.8125 train_time:370668ms step_avg:257.41ms
+step:1500/5100 train_loss:3.5000 train_time:383431ms step_avg:257.34ms
+step:1500/5100 val_loss:3.5838 train_time:383599ms step_avg:257.45ms
+step:1550/5100 train_loss:3.6406 train_time:396726ms step_avg:257.61ms
+step:1600/5100 train_loss:3.6875 train_time:409496ms step_avg:257.54ms
+step:1625/5100 val_loss:3.5685 train_time:416034ms step_avg:257.61ms
+step:1650/5100 train_loss:3.5000 train_time:422248ms step_avg:257.47ms
+step:1700/5100 train_loss:3.5469 train_time:435010ms step_avg:257.40ms
+step:1750/5100 train_loss:3.5625 train_time:448249ms step_avg:257.61ms
+step:1750/5100 val_loss:3.5482 train_time:448417ms step_avg:257.71ms
+step:1800/5100 train_loss:3.5781 train_time:461019ms step_avg:257.55ms
+step:1850/5100 train_loss:3.4375 train_time:473786ms step_avg:257.49ms
+step:1875/5100 val_loss:3.5341 train_time:480333ms step_avg:257.55ms
+step:1900/5100 train_loss:3.4531 train_time:486989ms step_avg:257.67ms
+step:1950/5100 train_loss:3.4219 train_time:500007ms step_avg:257.74ms
+step:2000/5100 train_loss:3.5000 train_time:512769ms step_avg:257.67ms
+step:2000/5100 val_loss:3.5195 train_time:512935ms step_avg:257.76ms
+step:2050/5100 train_loss:3.3438 train_time:525537ms step_avg:257.62ms
+step:2100/5100 train_loss:3.4531 train_time:538809ms step_avg:257.80ms
+step:2125/5100 val_loss:3.5079 train_time:545352ms step_avg:257.85ms
+step:2150/5100 train_loss:3.3906 train_time:551571ms step_avg:257.74ms
+step:2200/5100 train_loss:3.3906 train_time:564335ms step_avg:257.69ms
+step:2250/5100 train_loss:3.5625 train_time:577100ms step_avg:257.63ms
+step:2250/5100 val_loss:3.4969 train_time:577265ms step_avg:257.71ms
+step:2300/5100 train_loss:3.2969 train_time:590268ms step_avg:257.76ms
+step:2350/5100 train_loss:3.3281 train_time:603028ms step_avg:257.70ms
+step:2375/5100 val_loss:3.4870 train_time:609579ms step_avg:257.75ms
+step:2400/5100 train_loss:3.3750 train_time:615793ms step_avg:257.65ms
+step:2450/5100 train_loss:3.5000 train_time:628555ms step_avg:257.60ms
+step:2500/5100 train_loss:3.5938 train_time:641820ms step_avg:257.76ms
+step:2500/5100 val_loss:3.4781 train_time:641983ms step_avg:257.82ms
+step:2550/5100 train_loss:3.4531 train_time:654581ms step_avg:257.71ms
+step:2600/5100 train_loss:3.6250 train_time:667347ms step_avg:257.66ms
+step:2625/5100 val_loss:3.4672 train_time:673901ms step_avg:257.71ms
+step:2650/5100 train_loss:3.4219 train_time:680225ms step_avg:257.66ms
+step:2700/5100 train_loss:3.6562 train_time:693339ms step_avg:257.75ms
+step:2750/5100 train_loss:3.5469 train_time:706105ms step_avg:257.70ms
+step:2750/5100 val_loss:3.4604 train_time:706273ms step_avg:257.76ms
+step:2800/5100 train_loss:3.7031 train_time:718869ms step_avg:257.66ms
+step:2850/5100 train_loss:3.4062 train_time:731960ms step_avg:257.73ms
+step:2875/5100 val_loss:3.4543 train_time:738762ms step_avg:257.86ms
+step:2900/5100 train_loss:3.2031 train_time:744980ms step_avg:257.78ms
+step:2950/5100 train_loss:3.4844 train_time:757745ms step_avg:257.74ms
+step:3000/5100 train_loss:3.3281 train_time:770511ms step_avg:257.70ms
+step:3000/5100 val_loss:3.4467 train_time:770678ms step_avg:257.75ms
+step:3050/5100 train_loss:3.4375 train_time:783772ms step_avg:257.82ms
+step:3100/5100 train_loss:3.5312 train_time:796528ms step_avg:257.78ms
+step:3125/5100 val_loss:3.4393 train_time:803071ms step_avg:257.81ms
+step:3150/5100 train_loss:3.3438 train_time:809287ms step_avg:257.73ms
+step:3200/5100 train_loss:3.2344 train_time:822052ms step_avg:257.70ms
+step:3250/5100 train_loss:3.2031 train_time:835228ms step_avg:257.79ms
+step:3250/5100 val_loss:3.4306 train_time:835393ms step_avg:257.84ms
+step:3300/5100 train_loss:3.3281 train_time:847986ms step_avg:257.75ms
+step:3350/5100 train_loss:3.5781 train_time:860750ms step_avg:257.71ms
+step:3375/5100 val_loss:3.4249 train_time:867295ms step_avg:257.74ms
+step:3400/5100 train_loss:3.4062 train_time:873512ms step_avg:257.67ms
+step:3450/5100 train_loss:3.5938 train_time:886820ms step_avg:257.80ms
+step:3500/5100 train_loss:3.4062 train_time:899582ms step_avg:257.76ms
+step:3500/5100 val_loss:3.4169 train_time:899748ms step_avg:257.81ms
+step:3550/5100 train_loss:3.5625 train_time:912350ms step_avg:257.73ms
+step:3600/5100 train_loss:3.2344 train_time:925209ms step_avg:257.72ms
+step:3625/5100 val_loss:3.4158 train_time:932187ms step_avg:257.87ms
+step:3650/5100 train_loss:3.4375 train_time:938401ms step_avg:257.80ms
+step:3700/5100 train_loss:3.4688 train_time:951167ms step_avg:257.77ms
+step:3750/5100 train_loss:3.4688 train_time:963933ms step_avg:257.74ms
+step:3750/5100 val_loss:3.4049 train_time:964099ms step_avg:257.78ms
+step:3800/5100 train_loss:3.4062 train_time:977133ms step_avg:257.82ms
+step:3850/5100 train_loss:3.4062 train_time:989900ms step_avg:257.79ms
+step:3875/5100 val_loss:3.3904 train_time:996452ms step_avg:257.81ms
+step:3900/5100 train_loss:3.5781 train_time:1002677ms step_avg:257.76ms
+step:3950/5100 train_loss:3.4531 train_time:1015432ms step_avg:257.72ms
+step:4000/5100 train_loss:3.5000 train_time:1028722ms step_avg:257.83ms
+step:4000/5100 val_loss:3.3750 train_time:1028888ms step_avg:257.87ms
+step:4050/5100 train_loss:3.4688 train_time:1041488ms step_avg:257.79ms
+step:4100/5100 train_loss:3.2656 train_time:1054256ms step_avg:257.76ms
+step:4125/5100 val_loss:3.3618 train_time:1060801ms step_avg:257.79ms
+step:4150/5100 train_loss:3.2500 train_time:1067019ms step_avg:257.73ms
+step:4200/5100 train_loss:3.5000 train_time:1080539ms step_avg:257.89ms
+step:4250/5100 train_loss:3.9375 train_time:1093309ms step_avg:257.86ms
+step:4250/5100 val_loss:3.3493 train_time:1093474ms step_avg:257.89ms
+step:4300/5100 train_loss:3.2500 train_time:1106075ms step_avg:257.83ms
+step:4350/5100 train_loss:3.3125 train_time:1118901ms step_avg:257.81ms
+step:4375/5100 val_loss:3.3353 train_time:1125836ms step_avg:257.92ms
+step:4400/5100 train_loss:3.3125 train_time:1132051ms step_avg:257.87ms
+step:4450/5100 train_loss:3.4531 train_time:1144812ms step_avg:257.84ms
+step:4500/5100 train_loss:3.4062 train_time:1157579ms step_avg:257.81ms
+step:4500/5100 val_loss:3.3234 train_time:1157746ms step_avg:257.85ms
+step:4550/5100 train_loss:3.3281 train_time:1170447ms step_avg:257.81ms
+step:4600/5100 train_loss:3.4062 train_time:1183622ms step_avg:257.87ms
+step:4625/5100 val_loss:3.3116 train_time:1190166ms step_avg:257.89ms
+step:4650/5100 train_loss:3.3594 train_time:1196382ms step_avg:257.84ms
+step:4700/5100 train_loss:3.3594 train_time:1209147ms step_avg:257.81ms
+step:4750/5100 train_loss:3.2656 train_time:1221999ms step_avg:257.81ms
+step:4750/5100 val_loss:3.2998 train_time:1222421ms step_avg:257.89ms
+step:4800/5100 train_loss:3.1875 train_time:1235018ms step_avg:257.83ms
+step:4850/5100 train_loss:3.3438 train_time:1247777ms step_avg:257.81ms
+step:4875/5100 val_loss:3.2896 train_time:1254328ms step_avg:257.83ms
+step:4900/5100 train_loss:3.3125 train_time:1260544ms step_avg:257.78ms
+step:4950/5100 train_loss:3.4062 train_time:1273843ms step_avg:257.86ms
+step:5000/5100 train_loss:3.5000 train_time:1286605ms step_avg:257.84ms
+step:5000/5100 val_loss:3.2815 train_time:1286772ms step_avg:257.87ms
+step:5050/5100 train_loss:3.2656 train_time:1299372ms step_avg:257.81ms
+step:5100/5100 train_loss:3.2188 train_time:1312134ms step_avg:257.79ms
+step:5100/5100 val_loss:3.2779 train_time:1312299ms step_avg:257.82ms
+peak memory consumption: 31420 MiB

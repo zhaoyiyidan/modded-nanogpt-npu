@@ -15,8 +15,12 @@ from itertools import accumulate
 from pathlib import Path
 
 os.environ["PYTORCH_NPU_ALLOC_CONF"] = "expandable_segments:True"
+os.environ["TORCH_NPU_COMPILE_CACHE_DIR"] = f"/tmp/r049_stage1_v1_compile_{os.environ.get('RANK', '0')}"
+os.environ["TORCHINDUCTOR_CACHE_DIR"] = f"/tmp/r049_stage1_v1_inductor_{os.environ.get('RANK', '0')}"
 import torch
 import torch_npu
+import softcap_ce_ext
+import unit_rmsnorm_dx_ext
 torch.empty(1, device="npu", requires_grad=True).backward()  # prevents a bug on some systems
 
 import torch.distributed as dist
@@ -84,11 +88,14 @@ def apply_normuon_variance_reduction(v_chunk, second_momentum_buffer, beta2, red
 # NorMuon optimizer (adapted for NPU: pure PyTorch polar_express replaces Triton version)
 
 class NorMuon(torch.optim.Optimizer):
-    def __init__(self, params, lr=0.02, weight_decay=0.01, momentum=0.95, beta2=0.95, custom_sizing=True):
+    def __init__(self, params, lr=0.02, weight_decay=0.01, momentum=0.95,
+                 beta2=0.95, custom_sizing=True, pack_large_groups=True):
         defaults = dict(lr=lr, weight_decay=weight_decay, momentum=momentum, beta2=beta2)
         self.world_size = dist.get_world_size() if dist.is_initialized() else 1
         if custom_sizing and dist.get_world_size() == 8:
             param_groups = self.generate_custom_param_groups(params)
+        elif pack_large_groups and self.world_size == 16:
+            param_groups = self.generate_packed_param_groups(params)
         else:
             param_groups = self.generate_standard_param_groups(params)
         super().__init__(param_groups, defaults)
@@ -103,6 +110,28 @@ class NorMuon(torch.optim.Optimizer):
         for param in params:
             groups[param.label].append(param)
         param_groups = []
+        for module_name, group_params in groups.items():
+            chunk_size = (len(group_params) + self.world_size - 1) // self.world_size
+            param_groups.append(dict(params=group_params, chunk_size=chunk_size))
+        return param_groups
+
+    def generate_packed_param_groups(self, params):
+        groups = defaultdict(list)
+        for param in params:
+            groups[param.label].append(param)
+        param_groups = []
+        # Attention and MLP matrices have the same [3072, 768] shape.  Keep
+        # attention first so the 10/22 split lands on a rank boundary when
+        # world_size=16 (two matrices per rank), avoiding all padding for the
+        # dominant communication payload.
+        attention_params = groups.pop('attn', [])
+        mlp_params = groups.pop('mlp', [])
+        large_params = attention_params + mlp_params
+        if large_params:
+            assert all(p.shape == large_params[0].shape for p in large_params)
+            chunk_size = (len(large_params) + self.world_size - 1) // self.world_size
+            assert len(attention_params) % chunk_size == 0
+            param_groups.append(dict(params=large_params, chunk_size=chunk_size))
         for module_name, group_params in groups.items():
             chunk_size = (len(group_params) + self.world_size - 1) // self.world_size
             param_groups.append(dict(params=group_params, chunk_size=chunk_size))
@@ -157,6 +186,8 @@ class NorMuon(torch.optim.Optimizer):
             start_idx = rank * chunk_size
             module_idx = start_idx if start_idx < len(params) else 0
             num_params = min(chunk_size, max(0, len(params) - start_idx))
+            if num_params:
+                assert len({p.label for p in params[module_idx:module_idx + num_params]}) == 1
 
             if "momentum_buffer" not in group:
                 group["momentum_buffer"] = torch.zeros_like(grad_chunk[:num_params])
@@ -338,8 +369,34 @@ class DistAdam(torch.optim.Optimizer):
 # -----------------------------------------------------------------------------
 # PyTorch nn.Module definitions for the model
 
+class UnitWeightRmsNorm(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, x: Tensor, weight: Tensor):
+        out, rstd = torch_npu.npu_rms_norm(
+            x, weight, epsilon=torch.finfo(x.dtype).eps
+        )
+        ctx.save_for_backward(x, rstd)
+        return out
+
+    @staticmethod
+    def backward(ctx, grad_out: Tensor):
+        x, rstd = ctx.saved_tensors
+        return unit_rmsnorm_dx_ext.backward(grad_out, x, rstd), None
+
+
 def norm(x: Tensor):
-    return F.rms_norm(x, (x.size(-1),))
+    weights = getattr(norm, "weights", None)
+    if weights is None:
+        weights = {}
+        norm.weights = weights
+    key = (x.size(-1), x.device, x.dtype)
+    weight = weights.get(key)
+    if weight is None:
+        weight = x.new_ones((x.size(-1),))
+        weights[key] = weight
+    if x.size(-1) == 768:
+        return UnitWeightRmsNorm.apply(x, weight)
+    return torch_npu.npu_rms_norm(x, weight, epsilon=torch.finfo(x.dtype).eps)[0]
 
 class CastedLinear(nn.Linear):
     def __init__(self, in_features: int, out_features: int, use_fp8=False, x_s=1.0, w_s=1.0, grad_s=1.0):
@@ -395,11 +452,17 @@ def rotary(x_BTHD: Tensor, cos: Tensor, sin: Tensor):
     y2 = x1 * (-sin) + x2 * cos
     return torch.cat((y1, y2), 3)
 
+
+@torch.compile(backend="npu", dynamic=False, fullgraph=True)
+def compiled_rotary_pair(q: Tensor, k: Tensor, cos: Tensor, sin: Tensor):
+    """Compile only the shared elementwise rotary pair."""
+    return rotary(q, cos, sin), rotary(k, cos, sin)
+
 @dataclass
 class AttnArgs:
     ve: torch.Tensor
     sa_lambdas: torch.Tensor
-    seqlens: torch.Tensor
+    seqlens: list[int]
     bm_size: int
     cos: torch.Tensor
     sin: torch.Tensor
@@ -443,18 +506,6 @@ class CausalSelfAttention(nn.Module):
         else:
             cls._shared_mask_cache = {k: v for k, v in cls._shared_mask_cache.items() if k[0] in keep_sizes}
 
-    @staticmethod
-    def _extract_actual_seqlens(seqlens: Tensor, total_tokens: int) -> list[int]:
-        cum = seqlens[1:]
-        real_mask = torch.ones(cum.numel(), dtype=torch.bool, device=cum.device)
-        real_mask[1:] = cum[1:] > cum[:-1]
-        actual_cum = cum[real_mask]
-        actual_cum = actual_cum[actual_cum > 0]
-        result = actual_cum.tolist()
-        if not result or result[-1] != total_tokens:
-            result.append(total_tokens)
-        return result
-
     def forward(self, x: Tensor, attn_args: AttnArgs):
         B, T = x.size(0), x.size(1)
         assert B == 1, "varlen sequences requires B == 1"
@@ -465,14 +516,16 @@ class CausalSelfAttention(nn.Module):
 
         q, k, v = F.linear(x, sa_lambdas[0] * self.qkvo_w[:self.dim * 3].type_as(x)).view(B, T, 3 * self.num_heads, self.head_dim).chunk(3, dim=-2)
         q, k = norm(q), norm(k)
-        q, k = rotary(q, cos, sin), rotary(k, cos, sin)
+        q, k = compiled_rotary_pair(q, k, cos, sin)
         if key_shift:
-            k[:, 1:, :, self.head_dim//4:self.head_dim//2] = k[:, :-1, :, self.head_dim//4:self.head_dim//2]
-            k[:, 1:, :, self.head_dim//4+self.head_dim//2:] = k[:, :-1, :, self.head_dim//4+self.head_dim//2:]
+            k0, k1, k2, k3 = k.chunk(4, dim=-1)
+            k1 = torch.cat((k1[:, :1], k1[:, :-1]), dim=1)
+            k3 = torch.cat((k3[:, :1], k3[:, :-1]), dim=1)
+            k = torch.cat((k0, k1, k2, k3), dim=-1)
         if ve is not None:
             v = v + ve.view_as(v)
 
-        actual_seq_qlen = self._extract_actual_seqlens(seqlens, T)
+        actual_seq_qlen = seqlens
         prev_bounds = [0] + actual_seq_qlen[:-1]
         max_doc_len = max(a - p for a, p in zip(actual_seq_qlen, prev_bounds))
         attn_mask = self._get_window_causal_mask(max_doc_len, bm_size, x.device)
@@ -484,6 +537,8 @@ class CausalSelfAttention(nn.Module):
             scale=attn_scale,
             atten_mask=attn_mask,
             sparse_mode=0,
+            pre_tockens=bm_size - 1,
+            next_tockens=0,
             actual_seq_qlen=actual_seq_qlen,
             actual_seq_kvlen=actual_seq_qlen,
         )[0].unsqueeze(0)
@@ -493,6 +548,15 @@ class CausalSelfAttention(nn.Module):
         y = y.contiguous().view(B, T, self.num_heads * self.head_dim)
         y = F.linear(y, sa_lambdas[1] * self.qkvo_w[self.dim * 3:].type_as(y))
         return y
+@torch.compile(backend="npu", dynamic=False, fullgraph=True)
+def compiled_mlp_full_scope(x, c_fc, c_proj):
+    """Full linear -> ReLU -> h*h -> linear MLP scope."""
+    h = F.linear(x, c_fc.type_as(x))
+    h = F.relu(h)
+    h = h * h
+    return F.linear(h, c_proj.T.type_as(h))
+
+
 class MLP(nn.Module):
     def __init__(self, dim: int):
         super().__init__()
@@ -509,10 +573,7 @@ class MLP(nn.Module):
             self.c_proj.zero_()
 
     def forward(self, x: Tensor):
-        x = F.linear(x, self.c_fc.type_as(x))
-        x = F.relu(x).square()
-        x = F.linear(x, self.c_proj.T.type_as(x))
-        return x
+        return compiled_mlp_full_scope(x, self.c_fc, self.c_proj)
 
 class Block(nn.Module):
     def __init__(self, dim: int, head_dim: int, num_heads: int, layer_idx: int):
@@ -575,7 +636,6 @@ class GPT(nn.Module):
             param.lr_mul = 75.
         self.lm_head.weight.lr_mul = 1.0
         self.scalars.lr_mul = 5.0
-        self.scalars.wd_mul = 0.0
 
     def forward(self, input_seq: Tensor, target_seq: Tensor, seqlens: Tensor, ws_short: int, ws_long: int):
         assert input_seq.ndim == 1
@@ -629,10 +689,7 @@ class GPT(nn.Module):
         x -= backout_lambda * x_backout
         x = norm(x)
         if self.training:
-            logits = self.lm_head(x)
-            logits = 30 * torch.sigmoid(logits / 7.5)
-            logits = logits.float()
-            loss = F.cross_entropy(logits.view(-1, logits.size(-1)), target_seq, reduction="sum")
+            loss = compiled_training_output_loss(x, self.lm_head.weight, target_seq)
         else:
             chunk_size = 4096
             x_2d = x.view(-1, x.size(-1))
@@ -644,10 +701,45 @@ class GPT(nn.Module):
                 logits_chunk = 30 * torch.sigmoid(logits_chunk / 7.5)
                 logits_chunk = logits_chunk.float()
                 total_loss += F.cross_entropy(logits_chunk, target_seq[start:end], reduction="sum").item()
-            #loss = x.new_tensor(total_loss / num_tokens)
-            loss = torch.tensor(total_loss / num_tokens, device=x.device, dtype=torch.float32)
+            loss = torch.tensor(total_loss / num_tokens, dtype=torch.float32, device=x.device)
         return loss
 
+
+# -----------------------------------------------------------------------------
+# Fuse softcap, single-pass online cross entropy, and their backward while
+# preserving the exact summed-loss contract used by the accepted baseline.
+class FusedSoftcapCrossEntropy(torch.autograd.Function):
+    @staticmethod
+    def forward(ctx, raw_logits, target):
+        sigmoid, row_max, row_logsumexp, per_token_loss = softcap_ce_ext.forward(
+            raw_logits, target
+        )
+        ctx.save_for_backward(sigmoid, target, row_max, row_logsumexp)
+        return per_token_loss[:, 0].sum()
+
+    @staticmethod
+    def backward(ctx, grad_loss):
+        sigmoid, target, row_max, row_logsumexp = ctx.saved_tensors
+        grad_logits = softcap_ce_ext.backward(
+            sigmoid,
+            target,
+            row_max,
+            row_logsumexp,
+            grad_loss.reshape(1).float(),
+        )
+        return grad_logits, None
+
+
+@torch.compile(backend="npu", dynamic=False)
+def compiled_training_output_logits(x, weight):
+    return F.linear(x, weight)
+
+
+def compiled_training_output_loss(x, weight, target):
+    raw_logits = compiled_training_output_logits(x, weight)
+    return FusedSoftcapCrossEntropy.apply(
+        raw_logits.view(-1, raw_logits.size(-1)), target
+    )
 
 # -----------------------------------------------------------------------------
 # Distributed data loader
@@ -800,11 +892,18 @@ def distributed_data_generator(filename_pattern: str, num_tokens: int, max_seq_l
         _inputs = _inputs.to(dtype=torch.int32)
         _targets = _targets.to(dtype=torch.int64)
         _cum_lengths = _cum_lengths.to(dtype=torch.int32)
+        cum = _cum_lengths[1:]
+        real_mask = torch.ones(cum.numel(), dtype=torch.bool)
+        real_mask[1:] = cum[1:] > cum[:-1]
+        actual_seq_lengths = cum[real_mask]
+        actual_seq_lengths = actual_seq_lengths[actual_seq_lengths > 0].tolist()
+        if not actual_seq_lengths or actual_seq_lengths[-1] != num_tokens_local:
+            actual_seq_lengths.append(num_tokens_local)
 
         new_params = yield (
             _inputs.to(device="npu", non_blocking=True),
             _targets.to(device="npu", non_blocking=True),
-            _cum_lengths.to(device="npu", non_blocking=True)
+            actual_seq_lengths
         )
 
         if new_params is not None:
@@ -826,7 +925,7 @@ class Hyperparameters:
     train_bs_extension: int = 24 * 2048 * 8
     train_max_seq_len: int = 128 * 16
     val_batch_size: int = 4 * 64 * 1024 * 8
-    num_scheduled_iterations: int = 2050
+    num_scheduled_iterations: int = 2070
     num_extension_iterations: int = 40
     num_iterations: int = num_scheduled_iterations + num_extension_iterations
     cooldown_frac: float = 0.55
@@ -905,28 +1004,36 @@ class MetricsLogger:
             blk.mlp.register_forward_hook(self.mlp_hook)
 
     def stash_grad_norms(self, model):
-        # all-rank participation: clone each grad, all_reduce(AVG), then per-layer L2.
-        handles = []
-        per_layer_grads: list[list] = [[] for _ in range(self.num_layers)]
+        # Preserve the exact global-gradient metric while replacing one
+        # collective per parameter with one collective per dtype.
+        buckets = defaultdict(list)
         for i, blk in enumerate(model.blocks):
             for p in blk.parameters():
                 if p.grad is None:
                     continue
-                g = p.grad.detach().clone()
-                handles.append(dist.all_reduce(g, op=dist.ReduceOp.AVG, async_op=True))
-                per_layer_grads[i].append(g)
-        for h in handles:
-            h.wait()
-        out = [None] * self.num_layers
-        for i, gs in enumerate(per_layer_grads):
-            if not gs:
-                continue
-            sq = None
-            for g in gs:
-                s = g.float().pow(2).sum()
-                sq = s if sq is None else sq + s
-            out[i] = sq.sqrt()
-        self._pending_grad_norms = out
+                buckets[p.grad.dtype].append((i, p.grad.detach()))
+
+        packed = []
+        for dtype_entries in buckets.values():
+            flat = torch.cat([g.reshape(-1) for _, g in dtype_entries])
+            handle = dist.all_reduce(flat, op=dist.ReduceOp.AVG, async_op=True)
+            packed.append((dtype_entries, flat, handle))
+
+        layer_sq = torch.zeros(self.num_layers, dtype=torch.float32, device=device)
+        layer_seen = [False] * self.num_layers
+        for dtype_entries, flat, handle in packed:
+            handle.wait()
+            offset = 0
+            for layer_idx, grad in dtype_entries:
+                count = grad.numel()
+                reduced_grad = flat.narrow(0, offset, count)
+                layer_sq[layer_idx].add_(reduced_grad.float().square().sum())
+                layer_seen[layer_idx] = True
+                offset += count
+        self._pending_grad_norms = [
+            layer_sq[i].sqrt() if layer_seen[i] else None
+            for i in range(self.num_layers)
+        ]
 
     def emit(self, step: int, train_time_ms: float):
         if not self.master or self.path is None:
@@ -987,9 +1094,18 @@ optimizer1 = DistAdam(
     lr=0.008,
     betas=(0.65, 0.95),
     eps=1e-8,
-    weight_decay=0.005,
+    weight_decay=0.0,
 )
-optimizer2 = NorMuon(hidden_matrix_params + gate_params, lr=0.023, momentum=0.95, beta2=0.95, weight_decay=1.2)
+optimizer2 = NorMuon(
+    hidden_matrix_params + gate_params,
+    lr=0.023,
+    momentum=0.95,
+    beta2=0.95,
+    weight_decay=1.2,
+    # Preserve the original optimizer state_dict group layout whenever
+    # checkpoints are requested.  The benchmark does not save checkpoints.
+    pack_large_groups=not args.save_checkpoint,
+)
 optimizers = [optimizer1, optimizer2]
 for opt in optimizers:
     for group in opt.param_groups:
