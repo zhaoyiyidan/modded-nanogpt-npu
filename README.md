@@ -1,10 +1,10 @@
 # Modded-NanoGPT · Ascend NPU Leaderboard
 
-> **This repository tracks NPU reproductions of the modded-nanogpt speedrun leaderboard on 16×Ascend 910C NPUs.**
+> **This repository tracks NPU reproductions of the modded-nanogpt speedrun leaderboard on 8×Ascend 910C NPUs.**
 >
 > Forked from upstream [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) — the original project is the NanoGPT speedrun leaderboard on **8×NVIDIA H100 GPUs** (a collaborative/competitive search for the fastest algorithm that reaches 3.28 cross-entropy loss on the FineWeb validation set).
 >
-> In this fork, upstream GPU records are ported, reviewed, and benchmarked on **16×Ascend 910C NPUs**. The goal is to maintain a comparable NPU leaderboard with auditable source, launch commands, environment metadata, logs, metrics, and review decisions for each accepted reproduction. All algorithmic ideas, world records, contributor credit, and paper citations belong to the upstream open-source project and are preserved in full below.
+> In this fork, upstream GPU records are ported, reviewed, and benchmarked on **8×Ascend 910C NPUs**. The goal is to maintain a comparable NPU leaderboard with auditable source, launch commands, environment metadata, logs, metrics, and review decisions for each accepted reproduction. All algorithmic ideas, world records, contributor credit, and paper citations belong to the upstream open-source project and are preserved in full below.
 >
 > - The leaderboard table below is the main result of this repository.
 > - Per-record NPU sources and successful run logs live under `records/track_1_short_npu/`.
@@ -15,14 +15,14 @@
 
 ## Runtime
 
-The NPU leaderboard uses a common 16-NPU reference runtime:
+The NPU leaderboard uses a common 8-NPU reference runtime:
 
 | Field | Value |
 |---|---|
 | Image | `docker.cnb.cool/nilpotenter/docker/codeserver-mindspeed:v1.0.5` |
 | Python | `/root/miniconda3/envs/llm_test/bin/python`, version `3.10.19` |
-| Hardware | 16×Ascend 910C NPU |
-| Process count | 16 distributed training processes |
+| Hardware | 8×Ascend 910C NPU (16 AI computing dies) |
+| Process count | 16 distributed training processes (one per die) |
 
 Some logs may report a PyTorch version such as `2.7.1+cpu`; in the Ascend image
 the `+cpu` suffix is the package build string and does not mean the run used CPU
@@ -57,7 +57,7 @@ upstream.
 ## NPU leaderboard
 
 The following table is the reviewed NPU reproduction leaderboard for accepted
-GPU records ported to 16×Ascend 910C. Times are sorted from longest to shortest
+GPU records ported to 8×Ascend 910C. Times are sorted from longest to shortest
 and taken from successful `.train.log` files; rows with multiple successful seeds
 report their average. For each row, the NPU source lives in
 `records/track_1_short_npu/<record>/source/` and successful run logs live in
